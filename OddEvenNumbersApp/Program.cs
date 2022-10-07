@@ -23,31 +23,9 @@
             Console.WriteLine();
         }
 
-        public static bool IsEven(int num)
-        {
-            if (num % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+        public static bool IsEven(int num) => num % 2 == 0;
 
-        }
-
-        public static bool IsOdd(int num)
-        {
-            if (num % 2 != 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
+        public static bool IsOdd(int num) => !IsEven(num);
 
     }
 
